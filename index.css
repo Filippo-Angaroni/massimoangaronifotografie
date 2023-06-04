@@ -1,26 +1,30 @@
-@keyframes anim {
-    from {
-        width: 20vw;
-        border-radius: 0px;
-        background-color: red;
-        margin-top: 0px;
-        height: 30vw;
-    }
-    to {
-        width: 80vw;
-        border-radius: 5vw;
-        background-color: blue;
-        margin-top: 10vw;
-        height: 50vw;
-    }
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap"); */
 
+body {
+    margin: 0px;
 }
 
-.main-c {
-    width: 0vw;
-    animation: anim 7s;
-    animation-delay: .05s;
-    animation-fill-mode: forwards;
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
 }
 
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10vw;
+
+    text-align: center;
+
+    user-select: none;
+}

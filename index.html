@@ -8,8 +8,25 @@
     <title>Massimo Angaroni</title>
 </head>
 <body style="overflow-x: hidden;">
-    <div style="width: 100vw; height: 30vw;  display: flex; align-items: center; justify-content: center; justify-items: center; align-content: center;">
-        <div class="main-c"></div>
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
     </div>
+
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                        0 1 0 0 0
+                                        0 0 1 0 0
+                                        0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="index.js">
+
+    </script>
+
 </body>
 </html>
