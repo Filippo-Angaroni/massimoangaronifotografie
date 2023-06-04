@@ -1,0 +1,26 @@
+@keyframes anim {
+    from {
+        width: 20vw;
+        border-radius: 0px;
+        background-color: red;
+        margin-top: 0px;
+        height: 30vw;
+    }
+    to {
+        width: 80vw;
+        border-radius: 5vw;
+        background-color: blue;
+        margin-top: 10vw;
+        height: 50vw;
+    }
+
+}
+
+.main-c {
+    width: 0vw;
+    animation: anim 7s;
+    animation-delay: .05s;
+    animation-fill-mode: forwards;
+}
+
+
